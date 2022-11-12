@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+}
+
+header {
+  background-color: teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  padding: 1rem 1.5rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  color: #fff;
+}
+
+header button {
+  position: relative;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+header button span {
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+header button a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* Start Profile Page */
+section#userProfile {
+  width: 100%;
+  padding: 2rem;
+}
+
+section#userProfile .userProfile {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #777;
+  border-radius: 0.5rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+
+section#userProfile .userProfile .image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 1rem;
+}
+
+section#userProfile .userProfile h2 {
+  margin-bottom: 1rem;
+}
+
+section#userProfile .userProfile h2,
+section#userProfile .userProfile p {
+  text-align: center;
+}
+/* End Profile Page */
+/* Start Users List */
+section#usersList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: rgb(204, 200, 200);
+  justify-content: center;
+  gap: 1rem;
+}
+section#usersList .card {
+  position: relative;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: teal;
+}
+
+section#usersList .card button {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+}
+
+section#usersList .card button i {
+  font-size: 2rem;
+  color: #f00;
+}
+
+section#usersList .card .userImage {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+/* End Users List */
